@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre pokemon"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.Material3.DisplaySmall"
+            android:id="@+id/tvNombre"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:text="Nº 001"
+            android:textAppearance="@style/TextAppearance.Material3.DisplaySmall"
+            android:id="@+id/tvNumero"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Categoria"
+            android:textAppearance="@style/TextAppearance.Material3.DisplaySmall"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semilla"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+            android:id="@+id/tvCategoria"/>
+
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habilidad"
+            android:textAppearance="@style/TextAppearance.Material3.DisplaySmall"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Espesura"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+            android:id="@+id/tvHabilidad"/>
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/ivPokemon"
+            android:src="@drawable/p1" />
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
